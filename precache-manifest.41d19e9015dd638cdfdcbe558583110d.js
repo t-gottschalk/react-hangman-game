@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f874c14e84ed81d21e63ce00f2aa1e5a",
+    "revision": "4cc5f9f113f9e9dc107786c77f683ab5",
     "url": "/react-hangman-game/index.html"
   },
   {
-    "revision": "a0fead1721b431265a66",
-    "url": "/react-hangman-game/static/css/main.1b6e6fda.chunk.css"
+    "revision": "4f47d895a3beb67609ee",
+    "url": "/react-hangman-game/static/css/main.11faa3a6.chunk.css"
   },
   {
     "revision": "035a63ec5841945f68a7",
     "url": "/react-hangman-game/static/js/2.2500a2f6.chunk.js"
   },
   {
-    "revision": "a0fead1721b431265a66",
+    "revision": "4f47d895a3beb67609ee",
     "url": "/react-hangman-game/static/js/main.351bc093.chunk.js"
   },
   {
