@@ -1,0 +1,43 @@
+{
+  "name": "react-hangman-game",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://t-gottschalk.github.io/react-hangman-game",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "enzyme": "^2.9.1",
+    "enzyme-to-json": "^2.0.0",
+    "eslint": "^6.1.0",
+    "eslint-plugin-react": "^7.3.0",
+    "gh-pages": "^1.2.0",
+    "react-addons-test-utils": "^15.6.0",
+    "react-test-renderer": "^15.6.1"
+  },
+  "dependencies": {
+    "n": "^2.1.8",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-scripts": "^3.1.1",
+    "styled-components": "^2.1.2"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
