@@ -59,16 +59,29 @@ class App extends Component {
 
   getData() {
     Promise.all([fetchMovies(27), fetchMovies(80), fetchMovies(53)])
-      .then(([horror, crime, thriller]) => [...horror, ...crime, ...thriller])
-      .then(
-        function(titles) {
-          const randomTitles = titles.sort(() => {
-            return 0.5 - Math.random();
-          });
-          return this.setState({ data: randomTitles });
-        }.bind(this)
-      );
+    .then(([drama, romance, military]) => [...drama, ...romance, ...military])
+    .then(
+      function(titles) {
+        const randomTitles = titles.sort(() => {
+          return 0.5 - Math.random();
+        });
+        return this.setState({ data: randomTitles });
+      }.bind(this)
+    );
   }
+
+  // getData() {
+  //   Promise.all([fetchMovies(27), fetchMovies(80), fetchMovies(53)])
+  //     .then(([horror, crime, thriller]) => [...horror, ...crime, ...thriller])
+  //     .then(
+  //       function(titles) {
+  //         const randomTitles = titles.sort(() => {
+  //           return 0.5 - Math.random();
+  //         });
+  //         return this.setState({ data: randomTitles });
+  //       }.bind(this)
+  //     );
+  // }
 
   getTitle() {
     const currentTitle = this.state.data[this.state.currentTitle].toLowerCase();
@@ -190,7 +203,7 @@ class App extends Component {
   render() {
     return (
       <div className="App" tabIndex="1" onKeyUp={this.handleKeyUp}>
-        <Name>Hangman</Name>
+        <Name>Classic Hangman Game</Name>
         <SubTitle newGame={this.state.newGame}>Guess the movie</SubTitle>
         {this.state.data.length > 0 && (
           <div>

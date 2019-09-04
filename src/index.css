@@ -1,7 +1,9 @@
 body {
-	background: #DFCFB4;
   margin: 0;
   padding: 0;
+  height: 100vh;
+  width: auto;
   font-family: sans-serif;
-
+  background: #DFCFB4;
+	background: linear-gradient(to bottom, #DFCFB4, white);
 }
